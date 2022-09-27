@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SantosVilanculos</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/lib/swiper-bundle.min.css" />
+    <script src="./src/lib/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./src/index.css" />
+    <script src="./src/index.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="">
+          <span class="fs-md">SantosVilanculos</span>
+          <h1 class="h__caption | fw-700">CREATING EXTRAORDINARY ENHANCED EXPIRIENCES</h1>
+          <div class="h__description">
+            <div class="h__section">
+              <button class="h__mail">santosvilanculos@outlook.com</button>
+              <div class="h__work">
+                <p class="fw-800">/Freelancer</p>
+                <p class="fw-800">/Website & App Developer</p>
+              </div>
+            </div>
+            <div class="h__section">
+              <div class="h__about">
+                <p class="">2 years development experience.</p>
+                <p class="">Based in Mozambique.</p>
+                <p class="">Get in touch for availability</p>
+              </div>
+              <div class="h__sm">
+                <a href="#" class="" target="_blank">Linkedin</a>
+                <a href="https://github.com/SantosVilanculos" class="" target="_blank">Github</a>
+                <a href="#" class="" target="_blank">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--  -->
+      <section class="section | container">
+        <h2 class="section__title">Selected work</h2>
+        <div class="section__content section__content--work"></div>
+      </section>
+
+      <!--  -->
+      <section class="section | container">
+        <h2 class="section__title">Skills</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./src/ico/git.svg" alt="" srcset="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/ico/nodejs.svg" alt="" srcset="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/ico/vscode.svg" alt="" srcset="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/ico/javascript.svg" alt="" srcset="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/ico/typescript.svg" alt="" srcset="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/ico/python.svg" alt="" srcset="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/ico/css.svg" alt="" srcset="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/ico/sass.svg" alt="" srcset="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/ico/html.svg" alt="" srcset="" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="#282828"
+              stroke-width="3"
+              viewbox="0 0 64 64"
+              width="24px"
+              height="24px"
+            >
+              <path d="M45.15 57.47 19.88 30.84 45.15 6.58" />
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="#282828"
+              stroke-width="3"
+              viewbox="0 0 64 64"
+              width="24px"
+              height="24px"
+            >
+              <path d="M18.86 57.47 44.12 30.84 18.86 6.58" />
+            </svg>
+          </div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <script>
+          const swiper = new Swiper('.swiper', {
+            autoplay: true,
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+
+            scrollbar: {
+              enabled: false,
+            },
+          });
+        </script>
+      </section>
+    </main>
+
+    <footer class="footer | center">
+      <span>&copy;<span id="year"></span>&MediumSpace;SantosVilanculos</span>
+    </footer>
+
+    <div class="notification | center" data-visible="false">copyed</div>
+  </body>
+</html>
